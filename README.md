@@ -1,5 +1,12 @@
 # Config Server Client Setup
 
+### To Run Locally
+1. Clone or download the repo to your local machine.
+
+2. Execute `./gradlew clean build` into your command line.
+
+3. Type `gradle bootRun` into the command line and you should see the server start up on port 8080. Voila, your config server is running locally.
+
 ### Creating Configuration Properties for your application
 1. To create configuration properties for your application, visit the following Github location.
 [Configuration Properties](TBD)
