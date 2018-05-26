@@ -1,0 +1,42 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.14.BUILD-SNAPSHOT'
+	}
+	repositories {
+		mavenCentral()
+		maven { url "https://repo.spring.io/snapshot" }
+		maven { url "https://repo.spring.io/milestone" }
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.myexample'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+jar {
+	baseName = 'myexample-config-server'
+}
+
+repositories {
+	mavenCentral()
+	maven { url "https://repo.spring.io/snapshot" }
+	maven { url "https://repo.spring.io/milestone" }
+}
+
+
+ext {
+	springCloudVersion = 'Edgware.BUILD-SNAPSHOT'
+}
+
+dependencies {
+	compile('org.springframework.cloud:spring-cloud-config-server:1.4.3.RELEASE')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+

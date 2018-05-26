@@ -1,0 +1,13 @@
+server:
+  port:8888
+
+spring:
+  application:
+    name: myexample-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: (GITHUB URL FOR CONFIG PROPERTIES REPO)
+          username: (GITHUB USERNAME)
+          password: (GITHUB PASSWORD / GITHUB TOKEN)
