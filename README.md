@@ -9,7 +9,7 @@
 
 ### Creating Configuration Properties for your application
 1. To create configuration properties for your application, visit the following Github location.
-[Configuration Properties](TBD)
+[Configuration Properties](https://github.com/paigen11/spring-cloud-config-properties-sample)
 
 2. Create a new file with the following naming convention.
 ```
